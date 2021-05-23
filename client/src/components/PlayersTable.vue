@@ -64,7 +64,11 @@ export default class PlayersTable extends Vue {
         this.isLoading = false;
       })
       .catch((e) => {
-        throw Error(e);
+        if (e.response) {
+          console.log(e.response.status);
+        } else {
+          console.log('error');
+        }
       });
   }
 
