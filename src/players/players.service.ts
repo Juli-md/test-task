@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import * as MOCKED_DATA from './testdata.json'; // or use const inside the controller function
-
+import * as MOCKED_DATA from './testdata.json'; 
 @Injectable()
 export class PlayersService {
 

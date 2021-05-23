@@ -1,12 +1,12 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
-import PlayersTable from '../components/PlayersTable.vue'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Home from '../views/Home.vue';
+import PlayersTable from '../components/PlayersTable.vue';
 
 const routes: Array<RouteRecordRaw> = [
-  { 
+  {
     path: '/',
     alias: '/home',
-    component: Home
+    component: Home,
   },
   {
     path: '/top',
@@ -15,26 +15,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/full',
     component: PlayersTable,
-  }
-  // {
-  //   path: '/home',
-  //   component: Home,
-  //   children: [
-  //     {
-  //       path: '/top',
-  //       component: PlayersTable
-  //     },
-  //     {
-  //       path: '/full',
-  //       component: PlayersTable
-  //     }
-  //   ]
-  // }
-]
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
