@@ -14,5 +14,5 @@
     "resolveJsonModule": true,
     "lib": ["es2020.string", "ES2020.Symbol.wellknown"]
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules"]
 }
